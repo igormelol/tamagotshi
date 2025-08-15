@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Tamagotchi Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tamagotchi-container">
+        <h1>Meu Tamagotchi Virtual</h1>
+
+        <div class="tamagotchi-display">
+            <div id="pet-mood" class="pet-mood">😊</div> <!-- Mood indicator -->
+            <div id="pet-image" class="pet-image">🥚</div> <!-- Pet image/emoji -->
+            <p id="pet-name" class="pet-name">Ovo</p>
+        </div>
+
+        <div class="status-panel">
+            <div class="status-item">
+                <span class="status-icon">🍔</span> Fome: <span id="status-hunger" class="status-value">100%</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">😊</span> Felicidade: <span id="status-happiness" class="status-value">100%</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">⚡</span> Energia: <span id="status-energy" class="status-value">100%</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">🧼</span> Higiene: <span id="status-cleanliness" class="status-value">100%</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">🎂</span> Idade: <span id="status-age" class="status-value">0 dias</span>
+            </div>
+            <div class="status-item">
+                <span class="status-icon">❤️</span> Saúde: <span id="status-health" class="status-value">100%</span>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="action-feed" class="action-button">🍔 Alimentar</button>
+            <button id="action-play" class="action-button">⚽ Brincar</button>
+            <button id="action-sleep" class="action-button">😴 Dormir</button>
+            <button id="action-clean" class="action-button">🧼 Limpar</button>
+        </div>
+
+        <div class="game-controls">
+            <button id="save-game-btn" class="game-button secondary">Salvar Jogo</button>
+            <button id="load-game-btn" class="game-button secondary">Carregar Jogo</button>
+            <button id="reset-game-btn" class="game-button danger">Reiniciar Jogo</button>
+        </div>
+
+        <div id="message-box" class="modal">
+            <div class="modal-content">
+                <p id="message-text"></p>
+                <button id="close-message-btn" class="action-button">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
